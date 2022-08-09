@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".MainActivity">
+
+
+    <Switch
+        android:id="@+id/switchFlags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewFlagEn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFlagEn"
+        android:visibility="invisible"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <ImageView
+        android:id="@+id/imageViewFlagEn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_margin="20sp"
+        app:srcCompat="@drawable/flag_en"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/switchFlags"/>
+
+    <ImageView
+        android:id="@+id/imageViewFlagDe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_margin="20sp"
+        android:alpha="0.3"
+        app:srcCompat="@drawable/flag_de"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/switchFlags"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/buttonMode0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_margin="24dp"
+        android:backgroundTint="@color/button_color"
+        android:textSize="18sp"
+        android:text="General"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewFlagEn" />
+
+    <Button
+        android:id="@+id/buttonMode1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_margin="24dp"
+        android:backgroundTint="@color/button_color"
+        android:textSize="18sp"
+        android:text="Preposition"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMode0" />
+
+    <Button
+        android:id="@+id/buttonMode2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_margin="24dp"
+        android:backgroundTint="@color/button_color"
+        android:textSize="18sp"
+        android:text="Phrasal verbs"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMode1" />
+
+    <Button
+        android:id="@+id/buttonMode3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_margin="24dp"
+        android:backgroundTint="@color/button_color"
+        android:textSize="18sp"
+        android:text="irregular verbs"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMode2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

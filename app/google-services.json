@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "548476358545",
+    "firebase_url": "https://learner-e9ab7-default-rtdb.firebaseio.com",
+    "project_id": "learner-e9ab7",
+    "storage_bucket": "learner-e9ab7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:548476358545:android:f37c5edf6c1f9006579430",
+        "android_client_info": {
+          "package_name": "com.vitaliy.learner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "548476358545-5nqmbq7sgm70fl3424vq8p9ea86j54ot.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRijaHdW4OAclC3vAAOhTvJSfQ5jK1Uog"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "548476358545-5nqmbq7sgm70fl3424vq8p9ea86j54ot.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

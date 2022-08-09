@@ -1,0 +1,684 @@
+{
+  "words": [
+    {
+      "russian": "терпеть",
+      "foreign": "abide - abode - abode",
+      "examples": "I can't abide that noise."
+    },
+    {
+      "russian": "быть, являться",
+      "foreign": "be - was ; were - been",
+      "examples": "I was drunk yesterday."
+    },
+    {
+      "russian": "рождать",
+      "foreign": "bear - bore - born",
+      "examples": "I was born in 1989."
+    },
+    {
+      "russian": "бить",
+      "foreign": "beat - beat - beaten",
+      "examples": "I know you beat your girlfriend."
+    },
+    {
+      "russian": "становиться, делаться",
+      "foreign": "become - became - become",
+      "examples": "So you became a lawyer and I became a writer."
+    },
+    {
+      "russian": "начинать(ся)",
+      "foreign": "begin - began - begun",
+      "examples": "This meating began two hours ago."
+    },
+    {
+      "russian": "гнуть(ся), сгибать(ся)",
+      "foreign": "bend - bent - bent",
+      "examples": "I bent a spoon with my mind."
+    },
+    {
+      "russian": "умолять, упрашивать",
+      "foreign": "beseech - besought - besought",
+      "examples": "I beseech you, please come home."
+    },
+    {
+      "russian": "держать пари, делать ставку",
+      "foreign": "bet - bet - bet",
+      "examples": "But my bet is they're bluffing."
+    },
+    {
+      "russian": "связывать",
+      "foreign": "bind - bound - bound",
+      "examples": "Prepare to bind the prisoners."
+    },
+    {
+      "russian": "кусать(ся)",
+      "foreign": "bite - bit - bitten",
+      "examples": "I don't want to get bitten."
+    },
+    {
+      "russian": "кровоточить",
+      "foreign": "bleed - bled - bled",
+      "examples": "My hands bled, but I wouldn't stop."
+    },
+    {
+      "russian": "дуть",
+      "foreign": "blow - blew - blown",
+      "examples": "All right, now, blow out the candles."
+    },
+    {
+      "russian": "ломать, прерывать, разбивать",
+      "foreign": "break - broke - broken",
+      "examples": "He broke his arm playing soccer."
+    },
+    {
+      "russian": "приносить, приводить",
+      "foreign": "bring - brought - brought",
+      "examples": "I knew she would bring you."
+    },
+    {
+      "russian": "транслировать",
+      "foreign": "broadcast - broadcast - broadcast",
+      "examples": "This programme is broadcast at 23h 30."
+    },
+    {
+      "russian": "строить",
+      "foreign": "build - built - built",
+      "examples": "This house was built in 1900."
+    },
+    {
+      "russian": "гореть, сжигать",
+      "foreign": "burn - burnt - burnt",
+      "examples": "She should be burnt as a witch."
+    },
+    {
+      "russian": "лопнуть, взрывать(ся)",
+      "foreign": "burst - burst - burst",
+      "examples": "Almost I burst supporting the air."
+    },
+    {
+      "russian": "покупать",
+      "foreign": "buy - bought - bought",
+      "examples": "I've bought two tickets."
+    },
+    {
+      "russian": "мочь физически",
+      "foreign": "can - could - could",
+      "examples": "Could you help me."
+    },
+    {
+      "russian": "ловить, схватывать",
+      "foreign": "catch - caught - caught",
+      "examples": "I got caught putting it back."
+    },
+    {
+      "russian": "выбирать",
+      "foreign": "choose - chose - chosen",
+      "examples": "Finally, she chose another kitten."
+    },
+    {
+      "russian": "приходить",
+      "foreign": "come - came - come",
+      "examples": "Finally, we came back home."
+    },
+    {
+      "russian": "стоить",
+      "foreign": "cost - cost - cost",
+      "examples": "It'll cost three hundred dollars for us."
+    },
+    {
+      "russian": "резать, обрезать",
+      "foreign": "cut - cut - cut",
+      "examples": "He cut my clothes."
+    },
+    {
+      "russian": "сметь",
+      "foreign": "dare - durst, dared  - dared",
+      "examples": "He would not dare to do such a thing."
+    },
+    {
+      "russian": "иметь дело, рассматривать",
+      "foreign": "deal - dealt - dealt",
+      "examples": "I never dealt with him."
+    },
+    {
+      "russian": "копать",
+      "foreign": "dig - dug - dug",
+      "examples": "I've dug a big hole."
+    },
+    {
+      "russian": "нырять",
+      "foreign": "dive - dove - dived",
+      "examples": "We just dive right into the ocean."
+    },
+    {
+      "russian": "делать",
+      "foreign": "do - did - done",
+      "examples": "I've done it this morning."
+    },
+    {
+      "russian": "рисовать, чертить",
+      "foreign": "draw - drew - drawn",
+      "examples": "This is like what you drew."
+    },
+    {
+      "russian": "видеть сны, мечтать",
+      "foreign": "dream - dreamt - dreamt",
+      "examples": "I dreamt that I was playing football."
+    },
+    {
+      "russian": "пить, выпивать",
+      "foreign": "drink - drank - drunk",
+      "examples": "Her problem was that she drank."
+    },
+    {
+      "russian": "ехать, везти, водить, гнать",
+      "foreign": "drive - drove - driven",
+      "examples": "I've been driving since I was 18."
+    },
+    {
+      "russian": "есть, принимать пищу, кушать",
+      "foreign": "eat - ate - eaten",
+      "examples": "He has eaten nothing since monday."
+    },
+    {
+      "russian": "падать",
+      "foreign": "fall - fell - fallen",
+      "examples": "I fell down the stairs."
+    },
+    {
+      "russian": "кормить(ся)",
+      "foreign": "feed - fed - fed",
+      "examples": "You feed him he'll never leave."
+    },
+    {
+      "russian": "чувствовать",
+      "foreign": "feel - felt - felt",
+      "examples": "They felt he was too weak."
+    },
+    {
+      "russian": "бороться, сражаться",
+      "foreign": "fight - fought - fought",
+      "examples": "Look, I fought him before."
+    },
+    {
+      "russian": "находить",
+      "foreign": "find - found - found",
+      "examples": "I found my keys."
+    },
+    {
+      "russian": "подходить соответствовать",
+      "foreign": "fit - fit - fit",
+      "examples": "I found someone who fit the description you gave."
+    },
+    {
+      "russian": "бежать, спасаться бегством",
+      "foreign": "flee (from) - fled - fled",
+      "examples": "No wonder you fled from me."
+    },
+    {
+      "russian": "летать",
+      "foreign": "fly - flew - flown",
+      "examples": "I just flew in from Ukraine."
+    },
+    {
+      "russian": "запрещать",
+      "foreign": "forbid - forbade - forbidden",
+      "examples": "I forbade you to go to the party."
+    },
+    {
+      "russian": "забывать",
+      "foreign": "forget - forgot - forgotten",
+      "examples": "I almost forgot that it was his birthday."
+    },
+    {
+      "russian": "прощать",
+      "foreign": "forgive - forgave - forgiven",
+      "examples": "I forgave you everything."
+    },
+    {
+      "russian": "замерзать, замереть.",
+      "foreign": "freeze - froze - frozen",
+      "examples": "When I saw her, I froze."
+    },
+    {
+      "russian": "получать, становиться",
+      "foreign": "get - got - got",
+      "examples": "I got it."
+    },
+    {
+      "russian": "давать",
+      "foreign": "give - gave - given",
+      "examples": "I gave you what you needed."
+    },
+    {
+      "russian": "идти, ехать",
+      "foreign": "go - went - gone",
+      "examples": "Actually, he's gone away."
+    },
+    {
+      "russian": "расти, выращивать",
+      "foreign": "grow - grew - grown",
+      "examples": "I grew up in Ukraine."
+    },
+    {
+      "russian": "висеть, вешать",
+      "foreign": "hang - hung - hung",
+      "examples": "We hung out a lot at this pub."
+    },
+    {
+      "russian": "иметь, обладать",
+      "foreign": "have - had - had",
+      "examples": "I came here to have a rest."
+    },
+    {
+      "russian": "слышать",
+      "foreign": "hear - heard - heard",
+      "examples": "I heard them say your name."
+    },
+    {
+      "russian": "прятать, прятаться",
+      "foreign": "hide - hid - hidden",
+      "examples": "But tell me where you hid the money."
+    },
+    {
+      "russian": "ударять, поражать",
+      "foreign": "hit - hit - hit",
+      "examples": "You know I would never hit you."
+    },
+    {
+      "russian": "держать, (в руке)",
+      "foreign": "hold - held - held",
+      "examples": "I held it in my arm."
+    },
+    {
+      "russian": "повредить, обидеть",
+      "foreign": "hurt - hurt - hurt",
+      "examples": "I know you hurt this girl."
+    },
+    {
+      "russian": "держать, хранить",
+      "foreign": "keep - kept - kept",
+      "examples": "We've kept this secret fot tfive years."
+    },
+    {
+      "russian": "становиться на колени",
+      "foreign": "kneel - knelt - knelt ",
+      "examples": "She knelt to me and asked for forgiveness."
+    },
+    {
+      "russian": "знать",
+      "foreign": "know - knew - known",
+      "examples": "But he knew he had no choice."
+    },
+    {
+      "russian": "класть",
+      "foreign": "lay - laid - laid",
+      "examples": "He laid his bag on the table."
+    },
+    {
+      "russian": "вести к чему-то, сопровождать",
+      "foreign": "lead - led - led",
+      "examples": "It never led to anything good."
+    },
+    {
+      "russian": "учиться, узнавать",
+      "foreign": "learn - learnt - learnt ",
+      "examples": "You have learnt an important lesson."
+    },
+    {
+      "russian": "оставлять, уезжать",
+      "foreign": "leave - left - left",
+      "examples": "Then leave my house and leave me alone."
+    },
+    {
+      "russian": "одалживать, давать взаймы",
+      "foreign": "lend - lent - lent",
+      "examples": "I lent her 500 dollars free of interest."
+    },
+    {
+      "russian": "позволять",
+      "foreign": "let - let - let",
+      "examples": "Let's go to the movies."
+    },
+    {
+      "russian": "лежать",
+      "foreign": "lie - lay - lain",
+      "examples": "I lay awake almost all night."
+    },
+    {
+      "russian": "зажигать, освещать",
+      "foreign": "light - lit - lit",
+      "examples": "He lit a fire."
+    },
+    {
+      "russian": "терять",
+      "foreign": "lose - lost - lost",
+      "examples": "I lost my wallet."
+    },
+    {
+      "russian": "делать, создавать",
+      "foreign": "make - made - made",
+      "examples": "I try not to make a mistakes."
+    },
+    {
+      "russian": "мочь, иметь возможность",
+      "foreign": "may - might - might",
+      "examples": "It may happen to us."
+    },
+    {
+      "russian": "значить, подразумевать",
+      "foreign": "mean - meant - meant",
+      "examples": "I meant I couldn't say no."
+    },
+    {
+      "russian": "встречать, знакомиться",
+      "foreign": "meet - met - met",
+      "examples": "I met her yesterday."
+    },
+    {
+      "russian": "ослышаться",
+      "foreign": "mishear - misheard - misheard",
+      "examples": "Maybe you misheard it."
+    },
+    {
+      "russian": "ошибаться",
+      "foreign": "mistake - mistook - mistaken",
+      "examples": "He mistook her for someone else."
+    },
+    {
+      "russian": "догнать, обогнать",
+      "foreign": "overtake - overtook - overtaken",
+      "examples": "Your car just overtook me."
+    },
+    {
+      "russian": "преодалевать",
+      "foreign": "overcome - overcame - overcome",
+      "examples": "We overcame those difficulties."
+    },
+    {
+      "russian": "платить",
+      "foreign": "pay - paid - paid",
+      "examples": "I paid for her."
+    },
+    {
+      "russian": "доказывать, удостоверять",
+      "foreign": "prove - proved - proven",
+      "examples": "I proved it was illegal."
+    },
+    {
+      "russian": "класть",
+      "foreign": "put - put - put",
+      "examples": "I put it on the desk."
+    },
+    {
+      "russian": "читать",
+      "foreign": "read - read; red - read; red",
+      "examples": "I think you should read this article."
+    },
+    {
+      "russian": "перестраивать, восстанавливать",
+      "foreign": "rebuild - rebuilt - rebuilt",
+      "examples": "We must rebuild this country together."
+    },
+    {
+      "russian": "ехать верхом",
+      "foreign": "ride - rode - ridden",
+      "examples": "I rode fifty miles that day."
+    },
+    {
+      "russian": "звонить, звенеть",
+      "foreign": "ring - rang - rung",
+      "examples": "She rang my doorbell in the morning."
+    },
+    {
+      "russian": "подниматься, восходить",
+      "foreign": "rise - rose - risen",
+      "examples": "Our profit has risen sinse Janurary."
+    },
+    {
+      "russian": "бежать",
+      "foreign": "run - ran - run",
+      "examples": "I ran away from her."
+    },
+    {
+      "russian": "говорить, сказать",
+      "foreign": "say - said - said",
+      "examples": "He said me what to do."
+    },
+    {
+      "russian": "видеть",
+      "foreign": "see - saw - seen",
+      "examples": "I've never seen seen it before."
+    },
+    {
+      "russian": "продавать",
+      "foreign": "sell - sold - sold",
+      "examples": "I've never sold my house."
+    },
+    {
+      "russian": "посылать, отправлять",
+      "foreign": "send - sent - sent",
+      "examples": "I sent her a message."
+    },
+    {
+      "russian": "установить, ставить",
+      "foreign": "set - set - set",
+      "examples": "I should set up my own bussines."
+    },
+    {
+      "russian": "трясти",
+      "foreign": "shake - shook - shaken",
+      "examples": "I shook him to see if he was alive."
+    },
+    {
+      "russian": "стрелять",
+      "foreign": "shoot - shot - shot",
+      "examples": "And I watched her shoot him."
+    },
+    {
+      "russian": "показывать",
+      "foreign": "show - showed - shown",
+      "examples": "Forget I showed you this picture."
+    },
+    {
+      "russian": "закрывать",
+      "foreign": "shut - shut - shut",
+      "examples": "Please shut the door behind you."
+    },
+    {
+      "russian": "петь",
+      "foreign": "sing - sang - sung",
+      "examples": "I well remember how we sang all night."
+    },
+    {
+      "russian": "тонуть, опускаться, погружаться",
+      "foreign": "sink - sank - sunk",
+      "examples": "But they were caught in a storm, and the ship sank."
+    },
+    {
+      "russian": "сидеть",
+      "foreign": "sit - sat - sat",
+      "examples": "He sat there smoking a pipe."
+    },
+    {
+      "russian": "спать",
+      "foreign": "sleep - slept - slept",
+      "examples": "He slept with over 20 women."
+    },
+    {
+      "russian": "скользить",
+      "foreign": "slide - slid - slid",
+      "examples": "It slid out of my hand."
+    },
+    {
+      "russian": "резать в длину, перерезать",
+      "foreign": "slit - slit - slit",
+      "examples": "I slit his throat."
+    },
+    {
+      "russian": "пахнуть, нюхать",
+      "foreign": "smell - smelt - smelt",
+      "examples": "She smelt like flowers."
+    },
+    {
+      "russian": "говорить",
+      "foreign": "speak - spoke - spoken",
+      "examples": "During this vacation I spoke English."
+    },
+    {
+      "russian": "произносить слово по буквам, писать",
+      "foreign": "spell - spelt - spelt",
+      "examples": "You also spelt his name wrong."
+    },
+    {
+      "russian": "тратить, истощать",
+      "foreign": "spend - spent - spent",
+      "examples": "Excellent. I spent a very relaxing evening."
+    },
+    {
+      "russian": "крутить, крутиться",
+      "foreign": "spin - spun - spun",
+      "examples": "Let's spin the big wheel to see what your challenge is."
+    },
+    {
+      "russian": "плевать",
+      "foreign": "spit - spat - spat",
+      "examples": "You can't spit without hitting a woman."
+    },
+    {
+      "russian": "разделить, раскалывать",
+      "foreign": "split - split - split",
+      "examples": "I mean we split three ways."
+    },
+    {
+      "russian": "портить, баловать",
+      "foreign": "spoil - spoilt - spoilt",
+      "examples": "They spoilt the food."
+    },
+    {
+      "russian": "распространять",
+      "foreign": "spread - spread - spread",
+      "examples": "You don't need to have an outbreak to spread the virus."
+    },
+    {
+      "russian": "стоять",
+      "foreign": "stand - stood - stood",
+      "examples": "I stood there and watched her go."
+    },
+    {
+      "russian": "воровать, красть",
+      "foreign": "steal - stole - stolen",
+      "examples": "He stole everything my dad had."
+    },
+    {
+      "russian": "придерживаться, приклеть",
+      "foreign": "stick - stuck - stuck",
+      "examples": "We better stick close together."
+    },
+    {
+      "russian": "жалить",
+      "foreign": "sting - stung - stung",
+      "examples": "Float like butterfly, sting like bee."
+    },
+    {
+      "russian": "вонять, отталкивать",
+      "foreign": "stink - stank - stunk",
+      "examples": "He stank of cigarettes and vodka."
+    },
+    {
+      "russian": "клясться, присягать, браниться",
+      "foreign": "swear - swore - sworn",
+      "examples": "You must swear not to tell a soul."
+    },
+    {
+      "russian": "мести",
+      "foreign": "sweep - swept - swept",
+      "examples": "Well, they've already swept all."
+    },
+    {
+      "russian": "плавать",
+      "foreign": "swim - swam - swum",
+      "examples": "I swam for a while... till I drowned."
+    },
+    {
+      "russian": "брать",
+      "foreign": "take - took - taken",
+      "examples": "I took his keys and went home."
+    },
+    {
+      "russian": "обучать, учить",
+      "foreign": "teach - taught - taught",
+      "examples": "You taught him to swim when he was two."
+    },
+    {
+      "russian": "рвать",
+      "foreign": "tear - tore - torn",
+      "examples": "You tore your papers up."
+    },
+    {
+      "russian": "рассказывать, сообщать",
+      "foreign": "tell - told - told",
+      "examples": "I told him everything you told me."
+    },
+    {
+      "russian": "думать",
+      "foreign": "think - thought - thought",
+      "examples": "I just thought you were upset."
+    },
+    {
+      "russian": "кидать, бросать",
+      "foreign": "throw - threw - thrown",
+      "examples": "He threw a stone at me."
+    },
+    {
+      "russian": "понимать",
+      "foreign": "understand - understood - understood",
+      "examples": "You actually understood what I wanted."
+    },
+    {
+      "russian": "предпринимать, гарантировать",
+      "foreign": "undertake - undertook - undertaken",
+      "examples": "Declare that we shall undertake the following:"
+    },
+    {
+      "russian": "будить, просыпаться",
+      "foreign": "wake - woke - woken",
+      "examples": "I woke up too early."
+    },
+    {
+      "russian": "носить (одежду)",
+      "foreign": "wear - wore - worn",
+      "examples": "I have never worn a watch."
+    },
+    {
+      "russian": "венчать(ся), выдавать замуж",
+      "foreign": "wed - wed - wed",
+      "examples": "He knew he had to wed the girl."
+    },
+    {
+      "russian": "хотеть быть",
+      "foreign": "will - would - would",
+      "examples": "it will be a great victory."
+    },
+    {
+      "russian": "мочить",
+      "foreign": "wet - wet - wet",
+      "examples": "I don't want to get you wet."
+    },
+    {
+      "russian": "выигрывать, получать",
+      "foreign": "win - won - won",
+      "examples": "I won this contest."
+    },
+    {
+      "russian": "снимать (с банкоманта) отнимать",
+      "foreign": "withdraw - withdrew - withdrawn",
+      "examples": "I withdrew twenty thousand dollars from my account."
+    },
+    {
+      "russian": "писать",
+      "foreign": "write - wrote - written",
+      "examples": "I wrote a letter."
+    }
+  ]
+}

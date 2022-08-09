@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Learner</string>
+    <string name="dictionary">Dictionary</string>
+    <string name="tap_n_to_n_translate">TAP \n TO \n TRANSLATE</string>
+    <string name="from_russian_to_english">from russian to english</string>
+    <string name="from_english_to_russian">from english to russian</string>
+    <string name="from_russian_to_german">from russian to german</string>
+    <string name="from_german_to_russian">from german to russian</string>
+</resources>
