@@ -19,6 +19,8 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Random;
 
+import io.reactivex.rxjava3.disposables.Disposable;
+
 public class LearnViewModel extends ViewModel {
 
     private FirebaseDatabase firebaseDatabase;
@@ -28,17 +30,21 @@ public class LearnViewModel extends ViewModel {
     private int mode;
 
     private MutableLiveData<List<Word>> words = new MutableLiveData<>();
-
+    private MutableLiveData<Boolean> loading = new MutableLiveData<>();
 
     public LiveData<List<Word>> getWords() {
         return words;
     }
 
+    public LiveData<Boolean> isLoading() {
+        return loading;
+    }
 
     public LearnViewModel(String lang, int mode) {
+        loading.setValue(true);
         this.lang = lang;
         this.mode = mode;
-        firebaseDatabase = FirebaseDatabase.getInstance();
+        firebaseDatabase = Utils.getDatabase();
         if (lang.equals(Const.GERMAN_LANG)) {
             wordsReference = firebaseDatabase.getReference("words_general_de");
         } else if (lang.equals(Const.ENGLISH_LANG) && mode == Const.GENERAL) {
@@ -50,8 +56,6 @@ public class LearnViewModel extends ViewModel {
         } else if (lang.equals(Const.ENGLISH_LANG) && mode == Const.IRREGULAR_VERBS) {
             wordsReference = firebaseDatabase.getReference("words_irregular_verbs");
         }
-    }
-    public void loadWords() {
         wordsReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -64,9 +68,7 @@ public class LearnViewModel extends ViewModel {
                         wordsFromFB.add(word);
                     }
                 }
-                Log.d("LearnViewModel", wordsFromFB.toString());
                 Collections.shuffle(wordsFromFB);
-                Log.d("LearnViewModel", wordsFromFB.toString());
                 words.setValue(wordsFromFB);
             }
 
@@ -75,6 +77,7 @@ public class LearnViewModel extends ViewModel {
 
             }
         });
+        loading.setValue(false);
     }
 
 }

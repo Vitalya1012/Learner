@@ -14,10 +14,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.lorentzos.flingswipe.SwipeFlingAdapterView;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -31,15 +34,10 @@ public class LearnActivity extends AppCompatActivity {
     private static final String EXTRA_MODE = "mode";
     private static final String EXTRA_TRANSLATE_MODE = "translate_mode";
 
-    private CardView cardViewWord;
-    private TextView textViewOriginalWord;
-    private TextView textViewTranslatedWord;
-    private TextView textViewExampleOnCard;
-    private TextView textViewHint;
-    private ImageView imageViewLeft;
-    private ImageView imageViewRight;
+    private LearnAdapter adapter;
+    private SwipeFlingAdapterView flingContainer;
 
-    private List<Word> words;
+    private List<Word> words = new ArrayList<>();
 
     private String lang;
     private int mode;
@@ -48,7 +46,6 @@ public class LearnActivity extends AppCompatActivity {
     private LearnViewModel viewModel;
     private LearnViewModelFactory learnViewModelFactory;
 
-    @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,65 +56,73 @@ public class LearnActivity extends AppCompatActivity {
         translateMode = getIntent().getIntExtra(EXTRA_TRANSLATE_MODE, 0);
         learnViewModelFactory = new LearnViewModelFactory(lang, mode);
         viewModel = new ViewModelProvider(this, learnViewModelFactory).get(LearnViewModel.class);
-        viewModel.loadWords();
+        adapter = new LearnAdapter(LearnActivity.this, translateMode);
+        flingContainer.setAdapter(adapter);
         viewModel.getWords().observe(this, new Observer<List<Word>>() {
             @Override
             public void onChanged(List<Word> wordsFromFB) {
-                words = wordsFromFB;
+                Log.d("LearnL", wordsFromFB.toString());
+                words.addAll(wordsFromFB);
+                adapter.setWords(words);
             }
         });
-        imageViewLeft.setOnClickListener(new View.OnClickListener() {
+        viewModel.isLoading().observe(this, new Observer<Boolean>() {
             @Override
-            public void onClick(View view) {
-                setWord();
-                textViewHint.setVisibility(View.VISIBLE);
-                textViewTranslatedWord.setVisibility(View.INVISIBLE);
-                textViewExampleOnCard.setVisibility(View.INVISIBLE);
+            public void onChanged(Boolean isLoading) {
+                if (!isLoading){
+                    adapter.setWords(words);
+                    Log.d("LearnLL", words.toString());
+                }
             }
         });
-        imageViewRight.setOnClickListener(new View.OnClickListener() {
+
+        flingContainer.setFlingListener(new SwipeFlingAdapterView.onFlingListener() {
             @Override
-            public void onClick(View view) {
-                setWord();
-                textViewHint.setVisibility(View.VISIBLE);
-                textViewTranslatedWord.setVisibility(View.INVISIBLE);
-                textViewExampleOnCard.setVisibility(View.INVISIBLE);
+            public void removeFirstObjectInAdapter() {
+
+            }
+
+            @Override
+            public void onLeftCardExit(Object o) {
+                words.remove(0);
+                adapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onRightCardExit(Object o) {
+                words.remove(0);
+                adapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onAdapterAboutToEmpty(int i) {
+
+            }
+
+            @Override
+            public void onScroll(float scrollProgressPercent) {
+                View view = flingContainer.getSelectedView();
+
             }
         });
-        textViewHint.setOnClickListener(new View.OnClickListener() {
+        flingContainer.setOnItemClickListener(new SwipeFlingAdapterView.OnItemClickListener() {
             @Override
-            public void onClick(View view) {
-                textViewHint.setVisibility(View.INVISIBLE);
+            public void onItemClicked(int i, Object o) {
+                View view = flingContainer.getSelectedView();
+                TextView textViewTranslatedWord = view.findViewById(R.id.textViewTranslatedWord);
                 textViewTranslatedWord.setVisibility(View.VISIBLE);
+                TextView textViewExampleOnCard = view.findViewById(R.id.textViewExampleOnCard);
                 textViewExampleOnCard.setVisibility(View.VISIBLE);
+                TextView textViewHint = view.findViewById(R.id.textViewHint);
+                textViewHint.setVisibility(View.INVISIBLE);
             }
         });
 
     }
 
-    private void setWord() {
-        if (translateMode == Const.FROM_RUSSIAN) {
-            Word word = words.get(new Random().nextInt(words.size()));
-            textViewOriginalWord.setText(word.getRussian());
-            textViewTranslatedWord.setText(word.getForeign());
-            textViewExampleOnCard.setText(word.getExamples());
-        } else {
-            Word word = words.get(new Random().nextInt(words.size()));
-            textViewOriginalWord.setText(word.getForeign());
-            textViewTranslatedWord.setText(word.getRussian());
-            textViewExampleOnCard.setText(word.getExamples());
-        }
-    }
 
     private void initViews() {
-        cardViewWord = findViewById(R.id.cardViewWord);
-        textViewOriginalWord = findViewById(R.id.textViewOriginalWord);
-        textViewTranslatedWord = findViewById(R.id.textViewTranslatedWord);
-        textViewExampleOnCard = findViewById(R.id.textViewExampleOnCard);
-        textViewHint = findViewById(R.id.textViewHint);
-        imageViewLeft = findViewById(R.id.imageViewLeft);
-        imageViewRight = findViewById(R.id.imageViewRight);
-
+        flingContainer = findViewById(R.id.frame);
     }
 
     public static Intent newIntent(Context context, String lang, int mode, int translateMode) {
@@ -127,4 +132,5 @@ public class LearnActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_TRANSLATE_MODE, translateMode);
         return intent;
     }
+
 }

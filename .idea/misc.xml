@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidProject/Java/Learner/app/src/main/res/drawable/laern_item_bg.xml" value="0.1785" />
+        <entry key="..\:/AndroidProject/Java/Learner/app/src/main/res/drawable/learn_item_bg.xml" value="0.1785" />
         <entry key="..\:/AndroidProject/Java/Learner/app/src/main/res/layout/activity_choose_type.xml" value="0.25416666666666665" />
         <entry key="..\:/AndroidProject/Java/Learner/app/src/main/res/layout/activity_dictionary.xml" value="0.25416666666666665" />
         <entry key="..\:/AndroidProject/Java/Learner/app/src/main/res/layout/activity_learn.xml" value="0.25416666666666665" />

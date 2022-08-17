@@ -29,8 +29,8 @@ public class DictionaryActivity extends AppCompatActivity {
     private String lang;
     private int mode;
 
-    private DictionaryViewModel viewModel;
-    private DictionaryViewModelFactory dictionaryViewModelFactory;
+    private LearnViewModel viewModel;
+    private LearnViewModelFactory learnViewModelFactory;
 
 
     @Override
@@ -39,9 +39,8 @@ public class DictionaryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_dictionary);
         lang = getIntent().getStringExtra(EXTRA_LANG);
         mode = getIntent().getIntExtra(EXTRA_MODE, Const.GENERAL);
-        dictionaryViewModelFactory = new DictionaryViewModelFactory(lang, mode);
-        viewModel = new ViewModelProvider(this, dictionaryViewModelFactory).get(DictionaryViewModel.class);
-        viewModel.loadWords();
+        learnViewModelFactory = new LearnViewModelFactory(lang, mode);
+        viewModel = new ViewModelProvider(this, learnViewModelFactory).get(LearnViewModel.class);
 
         recyclerView = findViewById(R.id.recyclerViewWords);
         adapter = new WordsAdapter(mode);
